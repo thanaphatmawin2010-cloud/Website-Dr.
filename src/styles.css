@@ -1,0 +1,46 @@
+/* Clinical Precision Theme Styles */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --canvas: #061426;
+    --surface: #0e1c2f;
+    --surface-card: #132033;
+    --surface-elevated: #1d2a3e;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+  }
+
+  body {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11", "tnum";
+    background-color: #061426;
+    color: #d6e3fe;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom clinical scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #061426;
+}
+::-webkit-scrollbar-thumb {
+  background: #1d2a3e;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0ea5e9;
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+.font-mono-numbers {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
